@@ -51,7 +51,36 @@ body, html {
 }
 
 .main-content {
-    background-color: lightgray;
+    background-color: rgb(226, 222, 222);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 5fr);
+}
+
+.projects > p {
+    grid-column: 1 / 3;
+}
+
+.card {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
