@@ -20,6 +20,17 @@ body, html {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 20px 10px 20px;
+}
+
+svg {
+    height: 1em;
+    width: 1em;
+}
+
+img {
+    height: 2em;
+    width: 2em;
 }
 
 .header1 {
