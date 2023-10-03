@@ -165,6 +165,10 @@ button {
 
 .card {
     background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 10px;
 }
 
 .card p {
