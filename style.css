@@ -118,6 +118,7 @@ button {
     color: white;
     font-weight: bold;
     padding-top: 20px;
+    padding-right: 20px;
 }
 
 .sidebar div {
@@ -147,28 +148,30 @@ button {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+}
+
+.main-header {
+    width: 100%;
 }
 
 .projects {
-    grid-row: 1 / 3;
+    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(3, 5fr);
-}
-
-.projects > p {
-    grid-column: 1 / 3;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
+    gap: 15px;
 }
 
 .card {
-    max-width: 200px;
-    max-height: 200px;
+    background-color: white;
+}
+
+.card p {
+    font-size: 12px;
 }
 
 .announcements {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
     display: grid;
     grid-template-rows: 1fr repeat(3, 2fr);
 }
