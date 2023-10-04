@@ -151,7 +151,7 @@ button {
 }
 
 .main-header {
-    width: 100%;
+    padding: 15px;
 }
 
 .projects {
@@ -164,11 +164,17 @@ button {
 }
 
 .card {
-    background-color: white;
-    border-radius: 5px;
+    background-image: linear-gradient(to right, gold, gold 2%, white 0);
+    border-radius: 10px;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-    padding: 10px;
+    padding: 15px;
+}
+
+.card div {
+    display: flex;
+    justify-self: end;
+    gap: 15px;
 }
 
 .card p {
